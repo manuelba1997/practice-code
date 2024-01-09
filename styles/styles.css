@@ -25,12 +25,70 @@ nav {
     margin-left: 1rem;
     
 }
+
+a,a:visited,a:active{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+color: brown;
+}
 .item-menu li:hover{
     color: brown;
     transition: color  0.3s;
+}
+.logo img {
+    width: 7rem;
+    height: 2.5rem;
 }
 main
 section{
 height:33vh;
 background-color: antiquewhite
 }
+
+/*SnakeGame Styles begin here*/
+.header {
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+}
+#board, .board-info {
+    max-width: 500px;
+}
+#board{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+#start, .board-info{
+    font-size: 25px;
+}
+#gameOver{
+    display: none;
+}
+.board-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#start{
+    background-color: #f35a69;
+    border: none;
+    color: white
+}
+#scoreBoard{
+    display: inline-flex;
+}
+.square{
+    aspect-ratio: 1;
+}
+.emtySquare{
+    background-color: #456990;
+}
+.snakeSquare{
+    background-color: #ccf47f;
+}
+.foodSquare{
+    background-color: #f35a69;
+}
+
